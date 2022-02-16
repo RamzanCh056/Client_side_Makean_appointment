@@ -71,7 +71,8 @@ flutter:
      - images/galery.jpg
      - images/card.jpg
      - images/bluefoot.webp
-     - images/
+     - images/girldoc.png
+     - images/qr.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
