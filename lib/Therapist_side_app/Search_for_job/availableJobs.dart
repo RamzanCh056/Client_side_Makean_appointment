@@ -248,7 +248,7 @@ class _availabeljobState extends State<availabeljob> {
                         "Featured",
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 12,color: Colors.white,
+                            fontSize: 10,color: Colors.white,
                         ),
         
                       ),
@@ -413,34 +413,7 @@ class _availabeljobState extends State<availabeljob> {
         
                          ],),
                    
-                    //      Column(
-                    //        children: [
-                    //          MaterialButton(
-                    //   color: Colors.redAccent[200],
-                    //   minWidth: 30,
-                     
-                    //   height: 35,
-                    //   onPressed: (){
-                    //       //  Navigator.push(context, MaterialPageRoute(builder: (context)=>  PaymentMethod  ()));// signup
-                    //   },
-                    //   shape: RoundedRectangleBorder(
-                    //     side: BorderSide(
-                    //       color: Colors.redAccent,
-                    //     ),
-                    //     borderRadius: BorderRadius.circular(50),
-                    //   ),
-                    //   child: Text(
-                    //     "Featured",
-                    //     style: TextStyle(
-                    //       fontWeight: FontWeight.w600,
-                    //       fontSize: 12,color: Colors.white,
-                    //     ),
-        
-                    //   ),
-                    // ),
-                    //           SizedBox(height: 60,),
-                    //        ],
-                    //      )
+                  
                        
                    
                      ],),
@@ -595,36 +568,7 @@ class _availabeljobState extends State<availabeljob> {
                         ],)
         
                          ],),
-                   
-                    //      Column(
-                    //        children: [
-                    //          MaterialButton(
-                    //   color: Colors.redAccent[200],
-                    //   minWidth: 30,
-                     
-                    //   height: 35,
-                    //   onPressed: (){
-                    //       //  Navigator.push(context, MaterialPageRoute(builder: (context)=>  PaymentMethod  ()));// signup
-                    //   },
-                    //   shape: RoundedRectangleBorder(
-                    //     side: BorderSide(
-                    //       color: Colors.redAccent,
-                    //     ),
-                    //     borderRadius: BorderRadius.circular(50),
-                    //   ),
-                    //   child: Text(
-                    //     "Featured",
-                    //     style: TextStyle(
-                    //       fontWeight: FontWeight.w600,
-                    //       fontSize: 12,color: Colors.white,
-                    //     ),
-        
-                    //   ),
-                    // ),
-                    //           SizedBox(height: 60,),
-                    //        ],
-                    //      )
-                       
+                  
                    
                      ],),
                    ),
@@ -645,4 +589,8 @@ class _availabeljobState extends State<availabeljob> {
       
     
   }
+   
+
+
+
 }

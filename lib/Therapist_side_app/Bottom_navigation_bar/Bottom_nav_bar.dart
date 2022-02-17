@@ -6,6 +6,9 @@ import '../Search_for_job/Code_Qr.dart';
 import '../Search_for_job/JobPage.dart';
 import '../Search_for_job/Notification.dart';
 import '../Search_for_job/bottomprofile.dart';
+import '../Search_for_job/tob_bar_celender.dart';
+
+
 
 class Bottom_navigation extends StatefulWidget {
   const Bottom_navigation({ Key? key }) : super(key: key);
@@ -38,7 +41,7 @@ class _Bottom_navigationState extends State<Bottom_navigation> {
             });
           case 1:
             return CupertinoTabView(builder: (context) {
-              return CupertinoPageScaffold(child: Container(child: Text("Celender"),),);
+              return CupertinoPageScaffold(child: BossTopTabBar(),);
             });
           case 2:
             return CupertinoTabView(builder: (context) {

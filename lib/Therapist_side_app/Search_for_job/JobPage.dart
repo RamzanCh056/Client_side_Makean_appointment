@@ -1,3 +1,5 @@
+import 'package:client_screen/Therapist_side_app/Search_for_job/subscription_screen.dart';
+
 import 'package:flutter/material.dart';
 
 import 'availableJobs.dart';
@@ -78,7 +80,7 @@ class _jobsearchState extends State<jobsearch> {
                   minWidth: double.infinity,
                   height: 60,
                   onPressed: (){
-                  //  Navigator.push(context, MaterialPageRoute(builder: (context)=> BookTheropy ()));// signup
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>  SubscriptionScreen ()));// signup
                   },
                   shape: RoundedRectangleBorder(
                     side: BorderSide(
