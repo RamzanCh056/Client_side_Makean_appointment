@@ -35,9 +35,14 @@ class _bottomprofileState extends State<bottomprofile> {
                                 elevation: 1.0,
                                 fillColor: Colors.white70,
                                 child: Center(
-                                  child: Icon(
-                                    Icons.arrow_back_ios,
-                                    size: 25.0,
+                                  child: Row(
+                                    children: [
+                                      SizedBox(width: 8,),
+                                      Icon(
+                                        Icons.arrow_back_ios,
+                                        size: 25.0,
+                                      ),
+                                    ],
                                   ),
                                 ),
                                 padding: EdgeInsets.all(15.0),
@@ -45,10 +50,14 @@ class _bottomprofileState extends State<bottomprofile> {
                               ),
                          // ),
                            Row(children: [
-                        Text("Profile", style: TextStyle(color: Colors.black,fontSize: 20, fontWeight: FontWeight.bold),)
+                        Text("Profile", style: TextStyle(color: Colors.black,fontSize: 20, fontWeight: FontWeight.bold),),
+                         
                       ],),
-                       Row(children: [
-
+                       Row(
+                       
+                         
+                         children: [
+                           
 
                           FlatButton.icon(onPressed: (){  showModalBottomSheet(context: context, 
                           builder: ((builder)   => Bottomsheet()),);}, icon: Icon(Icons.note_alt_outlined, size: 35,), label: Text("")

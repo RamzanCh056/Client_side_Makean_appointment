@@ -14,45 +14,45 @@ class _availabeljobState extends State<availabeljob> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(14.0),
+        padding: const EdgeInsets.all(10.0),
         child: SingleChildScrollView(
           child: Stack(children: [
     Column(children: [
-                       SizedBox(height: 30,),
+                      
                        Column(children: [
+                         
+                    Container(
+              //color: Colors,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                      padding: const EdgeInsets.only(top: 45, bottom: 30, right: 80,),
+                      child: RawMaterialButton(
+                        onPressed: () {
 
-                     
-
-                         
-                         
-                         
-                     Container(
-                         child: Row(
-                        children: [
-                               RawMaterialButton(
-                                onPressed: () {
-     
-                             Navigator.pop(context,);
-                                },
-                                elevation: 1.0,
-                                fillColor: Colors.white70,
-                                child: Center(
-                                  child: Icon(
-                                    Icons.arrow_back_ios,
-                                    size: 25.0,
-                                  ),
-                                ),
-                                padding: EdgeInsets.all(15.0),
-                                shape: CircleBorder(),
+                          Navigator.pop(context, );// signup
+                        },
+                        elevation: 1.0,
+                        fillColor: Colors.white70,
+                        child: Center(
+                          child: Row(
+                            children: [
+                              SizedBox(width: 8,),
+                              Icon(
+                                Icons.arrow_back_ios,
+                                size: 25.0,
                               ),
-                         // ),
-                          
-     
-     
-                        ],
-                      ),
-                         
-                     ),
+                            ],
+                          ),
+                        ),
+                        padding: EdgeInsets.all(15.0),
+                        shape: CircleBorder(),
+                      )
+                  ),
+                ],
+              ),
+            ),
                    
                      ]
                      ),

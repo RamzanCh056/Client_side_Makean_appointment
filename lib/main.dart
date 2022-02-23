@@ -2,6 +2,8 @@ import 'package:client_screen/Therapist_side_app/Bottom_navigation_bar/Bottom_na
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'Client_side_application/bottom_bar/custom_navigation_bar.dart';
+import 'Home_page_calls.dart';
+import 'SPA_screen/Spa_bottom_bar.dart';
 
 List<CameraDescription>? cameras;
 void main() async{
@@ -27,8 +29,10 @@ class MyApp extends StatelessWidget {
      
         primarySwatch: Colors.blue,
       ),
-      home:    Bottom_navigation(),
-            // Navigatiobar(),    for client side app
+      home:   HomePageCall(),
+      //SPABottombar(),
+      // Bottom_navigation(),
+           //  Navigatiobar(),    for client side app
     );
   }
 }

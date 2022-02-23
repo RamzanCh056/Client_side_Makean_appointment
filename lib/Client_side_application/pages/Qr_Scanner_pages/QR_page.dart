@@ -84,7 +84,7 @@ class _QrPageState extends State<QrPage> {
                                     child: Center(
                                       // child: ClipRRect(
                                       //   borderRadius: BorderRadius.circular(12),
-                      child: Image.asset('images/scanner.jpg', fit: BoxFit.fill, )
+                      child: Image.asset('images/qr.png', fit: BoxFit.fill, )
                       
                                      //   ),
                                     ),

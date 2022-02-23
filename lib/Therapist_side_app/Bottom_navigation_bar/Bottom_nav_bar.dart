@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../Client_side_application/pages/Celender/celender.dart';
 import '../Search_for_job/Code_Qr.dart';
 import '../Search_for_job/JobPage.dart';
 import '../Search_for_job/Notification.dart';
@@ -45,7 +46,7 @@ class _Bottom_navigationState extends State<Bottom_navigation> {
             });
           case 2:
             return CupertinoTabView(builder: (context) {
-              return CupertinoPageScaffold(child:QrCode(),);
+              return CupertinoPageScaffold(child: QRViewExample (),);
             });
               case 3:
             return CupertinoTabView(builder: (context) {

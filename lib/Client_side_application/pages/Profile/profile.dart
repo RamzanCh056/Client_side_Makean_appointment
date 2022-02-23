@@ -37,9 +37,14 @@ class _ProfileState extends State<Profile> {
                                 elevation: 1.0,
                                 fillColor: Colors.white70,
                                 child: Center(
-                                  child: Icon(
-                                    Icons.arrow_back_ios,
-                                    size: 25.0,
+                                  child: Row(
+                                    children: [
+                                      SizedBox(width: 7,),
+                                      Icon(
+                                        Icons.arrow_back_ios,
+                                        size: 25.0,
+                                      ),
+                                    ],
                                   ),
                                 ),
                                 padding: EdgeInsets.all(15.0),
@@ -112,7 +117,7 @@ class _ProfileState extends State<Profile> {
                     SizedBox(height: 10,),
 
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: Column(children: [
                         Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,

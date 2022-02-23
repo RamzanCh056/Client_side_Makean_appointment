@@ -24,7 +24,7 @@ class _jobsearchState extends State<jobsearch> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 55, bottom: 30, right: 30),
+                  padding: const EdgeInsets.only(top: 45, bottom: 30, right: 16),
                   child: Icon(Icons.logout, size: 35, color: Colors.black,),
                 ),
               ],

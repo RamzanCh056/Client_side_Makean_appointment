@@ -1,4 +1,5 @@
 
+import 'package:client_screen/Client_side_application/pages/select_services.dart';
 import 'package:client_screen/Client_side_application/pages/what_services_youWant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _Home_pageState extends State<Home_page> {
                   minWidth: double.infinity,
                   height: 60,
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Services_you_Want ()));// signup
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Select_services ()));// signup
                   },
                   shape: RoundedRectangleBorder(
                     side: BorderSide(

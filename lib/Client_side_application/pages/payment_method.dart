@@ -11,39 +11,54 @@ class PaymentMethod extends StatefulWidget {
 }
 
 class _PaymentMethodState extends State<PaymentMethod> {
+  String dropdownvalue = ' Pay by card';   
+  
+  // List of items in our dropdown menu
+  var items = [    
+    ' Pay by card',
+    ' Pay by cash',
+   
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(10.0),
         child: Column(children: [
-                   Container(
-                //color: Colors,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                        padding: const EdgeInsets.only(top: 55, bottom: 30, right: 30),
-                        child: RawMaterialButton(
-                          onPressed: () {
+                  Container(
+              //color: Colors,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                      padding: const EdgeInsets.only(top: 45, bottom: 30, right: 80,),
+                      child: RawMaterialButton(
+                        onPressed: () {
 
-                            Navigator.pop(context);// signup
-                          },
-                          elevation: 1.0,
-                          fillColor: Colors.white70,
-                          child: Center(
-                            child: Icon(
-                              Icons.arrow_back_ios,
-                              size: 25.0,
-                            ),
+                          Navigator.pop(context, );// signup
+                        },
+                        elevation: 1.0,
+                        fillColor: Colors.white70,
+                        child: Center(
+                          child: Row(
+                            children: [
+                              SizedBox(width: 8,),
+                              Icon(
+                                Icons.arrow_back_ios,
+                                size: 25.0,
+                              ),
+                            ],
                           ),
-                          padding: EdgeInsets.all(15.0),
-                          shape: CircleBorder(),
-                        )
-                    ),
-                  ],
-                ),
+                        ),
+                        padding: EdgeInsets.all(15.0),
+                        shape: CircleBorder(),
+                      )
+                  ),
+                ],
               ),
+            ),
+
            
                  Row(
                    mainAxisAlignment: MainAxisAlignment.start,
@@ -64,27 +79,45 @@ class _PaymentMethodState extends State<PaymentMethod> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(children: [
-               Container(
-                   height: 60,
-                   width: double.infinity,
-                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
-                   color: Colors.white,
-                     boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        offset: Offset(0.0, 1.0), //(x,y)
-                        blurRadius: 2.0,
-                      ),
-                    ],
+             Container(
+                 height: 60,
+                 width: double.infinity,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
+                 color: Colors.white,
+                   boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0.0, 1.0), //(x,y)
+                      blurRadius: 2.0,
+                    ),
+                  ],
 
-                   ),
-
-                   child: ListTile(
-                      title: Text("Pay by card", style: TextStyle(fontSize: 20,),),
-                      trailing: Icon(Icons.keyboard_arrow_down)
-
-                   ),
-               )
+                 ),
+                 child:   DropdownButton(
+                dropdownColor: Colors.white,
+              // Initial Value
+              value: dropdownvalue,
+                underline: SizedBox(),
+                isExpanded: true,
+              // Down Arrow Icon
+              icon: const Icon(Icons.keyboard_arrow_down),    
+                
+              // Array list of items
+              items: items.map((String items) {
+                return DropdownMenuItem(
+                  value: items,
+                  child: Text(items),
+                );
+              }).toList(),
+              // After selecting the desired option,it will
+              // change button value to selected value
+              onChanged: (String? newValue) { 
+                setState(() {
+                  dropdownvalue = newValue!;
+                });
+              },
+            ),
+               ),
 
 
                ],),
@@ -161,4 +194,5 @@ class _PaymentMethodState extends State<PaymentMethod> {
       
     
   }
+   
 }

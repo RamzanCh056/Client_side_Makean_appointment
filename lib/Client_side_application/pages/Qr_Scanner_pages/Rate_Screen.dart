@@ -12,7 +12,7 @@ class _Rate_ScreenState extends State<Rate_Screen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-       resizeToAvoidBottomInset: true,
+       resizeToAvoidBottomInset: false,
      // resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blue,
         // appBar: AppBar(title: Text('Stack Demo'),),
@@ -33,6 +33,7 @@ class _Rate_ScreenState extends State<Rate_Screen> {
                 ),
                 Expanded(
                   child: Container(
+                    height: 400,
                    decoration: BoxDecoration(borderRadius: BorderRadius.only(topLeft: Radius.circular(40), topRight: Radius.circular(40)),
                    color: Colors.white,
                      boxShadow: [
@@ -48,14 +49,14 @@ class _Rate_ScreenState extends State<Rate_Screen> {
                    child: Column(children: [
 
                     Padding(
-                      padding: const EdgeInsets.only(top: 80),
+                      padding: const EdgeInsets.only(top: 65),
                       child: Column(children: [
                           Center(
                         child: Text('Brian Honer', style: TextStyle(color: Colors.blue, fontSize: 16,fontWeight: FontWeight.bold),),
                       ),
                       ],),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(height: 10,),
                     
                      
                           Row(
@@ -96,13 +97,35 @@ class _Rate_ScreenState extends State<Rate_Screen> {
                                
                    
                       ],),
-                         SizedBox(height: 20,),
+                         SizedBox(height: 10,),
 
                       Column(children: [
 
                Text('Comments', style: TextStyle(color: Colors.black, fontSize: 12,fontWeight: FontWeight.bold),),
 
                       ],),
+
+
+          //               new Flexible(
+          //   child: new   TextField(
+
+          //            decoration: new InputDecoration(
+                        
+          //              border: new OutlineInputBorder(
+                         
+          //                borderSide: new BorderSide(
+          //                  color: Colors.black, width: 3),
+          //                borderRadius: BorderRadius.circular(16),
+                 
+          //              ),
+          //              hintText: 'Elizobath',
+                      
+                     
+                       
+          //            ),
+          //            ),
+          // ),
+
                        
                  Flexible(
                    
@@ -113,7 +136,7 @@ class _Rate_ScreenState extends State<Rate_Screen> {
                      child: Column(children: [
                       TextField(
                        
-                        maxLines: 5,
+                        maxLines: 4,
                    decoration: new InputDecoration(
                       
                      border: new OutlineInputBorder(
@@ -130,14 +153,16 @@ class _Rate_ScreenState extends State<Rate_Screen> {
                  
                       
                          
-                     ],),
-                   ),
-                 ),
+                  ],),
+                  ),
+                  ),
 
-                    // Center(
+                    //Center(
                                   Padding(
                                     padding: const EdgeInsets.only(bottom: 40),
-                                    child: Column(
+
+                                
+                                  child:   Column(
                                      
               children: [
                 MaterialButton(
@@ -165,7 +190,7 @@ class _Rate_ScreenState extends State<Rate_Screen> {
               ],
             ),
                                   ),
-                              // ),
+                            //  ),
 
                      
                    ],),

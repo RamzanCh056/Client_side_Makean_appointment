@@ -10,31 +10,53 @@ class BookTheropy extends StatefulWidget {
 }
 
 class _BookTheropyState extends State<BookTheropy> {
+    String? dropdownValue = ' 60 minutes';
+  final items = [
+    ' 60 minutes',
+    ' 30 minutes',
+  ];
+  String? dropdownValueshare = ' 9:00-10:00';
+  final item = [
+    ' 9:00-10:00',
+    ' 11:00-12:00',
+  ];
+ 
+
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
-            Container(
+         Container(
               //color: Colors,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                      padding: const EdgeInsets.only(top: 55, bottom: 30, right: 30),
+                      padding: const EdgeInsets.only(top: 45, bottom: 30, right: 80,),
                       child: RawMaterialButton(
                         onPressed: () {
 
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Select_services ()));// signup
+                          Navigator.pop(context, );// signup
                         },
                         elevation: 1.0,
                         fillColor: Colors.white70,
                         child: Center(
-                          child: Icon(
-                            Icons.arrow_back_ios,
-                            size: 25.0,
+                          child: Row(
+                            children: [
+                              SizedBox(width: 8,),
+                              Icon(
+                                Icons.arrow_back_ios,
+                                size: 25.0,
+                              ),
+                            ],
                           ),
                         ),
                         padding: EdgeInsets.all(15.0),
@@ -44,6 +66,7 @@ class _BookTheropyState extends State<BookTheropy> {
                 ],
               ),
             ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -273,14 +296,17 @@ class _BookTheropyState extends State<BookTheropy> {
                   ],
 
                  ),
+                 child:    DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: dropdownValue,
+                    items: items.map(buildMenuItem).toList(),
+                    dropdownColor: Colors.white,
+                    onChanged: (value) =>
+                        setState(() => this.dropdownValue = value),
+                  ),
+                ),
 
-                 child: ListTile(
-                    title: Text("60 minutes", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    trailing: Icon(Icons.keyboard_arrow_down)
-
-                 ),
-               )
-
+               ),
 
                ],),
                SizedBox(height: 10,),
@@ -293,7 +319,8 @@ class _BookTheropyState extends State<BookTheropy> {
                ],),
                
                 SizedBox(height: 5,),
-               Column(children: [
+              
+    Column(children: [
                Container(
                  height: 60,
                  width: double.infinity,
@@ -308,16 +335,22 @@ class _BookTheropyState extends State<BookTheropy> {
                   ],
 
                  ),
-
-                 child: ListTile(
-                    title: Text("data", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    trailing: Icon(Icons.keyboard_arrow_down)
-
-                 ),
+                 child:   DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: dropdownValueshare,
+                    items: item.map(buildMenuItem).toList(),
+                    dropdownColor: Colors.white,
+                    onChanged: (value) =>
+                        setState(() => this.dropdownValueshare = value),
+                  ),
+                ),
+               
                )
 
 
                ],),
+
+
                SizedBox(height: 20,),
 
                 Column(
@@ -357,4 +390,19 @@ class _BookTheropyState extends State<BookTheropy> {
 
     );
   }
+ DropdownMenuItem<String> buildMenuItem(String item) => DropdownMenuItem(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(fontSize: 20, color: Colors.black),
+      ));
+  DropdownMenuItem<String> buildMenuItem1(String item) => DropdownMenuItem(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(fontSize: 20, color: Colors.black),
+      ));
+
 }
+
+ 

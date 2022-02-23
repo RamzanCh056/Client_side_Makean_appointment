@@ -40,7 +40,11 @@ dependencies:
   calendar_timeline: ^1.0.4
   image_picker: ^0.8.4+8
   camera: ^0.9.4+11
-
+  multi_select_flutter: ^4.0.0
+  flutter_barcode_scanner: ^2.0.0
+  qr_code_scanner: ^0.7.0
+  
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -66,13 +70,22 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - images/doc.png
-     - images/foot.jpg
+     - images/foot.png
      - images/head.jpg
      - images/galery.jpg
      - images/card.jpg
      - images/bluefoot.webp
      - images/girldoc.png
      - images/qr.png
+     - images/headblue.png
+     - images/spa.png
+     - images/spavec.jpg
+     - images/spanew.jpg
+     - images/spa-treatment.jpg
+     - images/manapp.jpg
+     - images/apllication.jpg
+     - images/manappli.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
