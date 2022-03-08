@@ -15,6 +15,12 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   PickedFile? _imagefile;
   final ImagePicker _picker  = ImagePicker();
+   String? dropdownValue = '  Male ';
+  final items = [
+    '  Male ',
+    '  Female ',
+    '  Other ',
+  ];
   Widget build(BuildContext context) {
     return Scaffold(
       
@@ -401,37 +407,47 @@ SizedBox(height: 5,),
           
         ],),
         SizedBox(height: 5,),
+         
          Column( 
           mainAxisAlignment: MainAxisAlignment.center,
         //  crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-              Text("  Gender", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+              Row(
+                children: [
+                  Text("  Gender", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                ],
+              ),
                  SizedBox(height: 3,),
-             Padding(
-               padding: const EdgeInsets.only(left: 70,right: 70),
-               child: new   TextField(
+            Column(children: [
+               Container(
+                 height: 60,
+                 width: double.infinity,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
+                 color: Colors.white,
+                   boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0.0, 1.0), //(x,y)
+                      blurRadius: 2.0,
+                    ),
+                  ],
 
-                       decoration: new InputDecoration(
-                          
-                         border: new OutlineInputBorder(
-                           
-                           borderSide: new BorderSide(
-                             color: Colors.black, width: 3),
-                           borderRadius: BorderRadius.circular(16),
-                   
-                         ),
-                         hintText: 'Male',
-                        
-                       
-                         
-                       ),
-                       ),
-             ),
+                 ),
+                 child:    DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: dropdownValue,
+                    items: items.map(buildMenuItem).toList(),
+                    dropdownColor: Colors.white,
+                    onChanged: (value) =>
+                        setState(() => this.dropdownValue = value),
+                  ),
+                ),
+
+               ),
+
+               ],),
           
         ],),
-
-
-
 
 SizedBox(height: 60,),
 
@@ -496,6 +512,12 @@ SizedBox(height: 60,),
   );
 
  }
+ DropdownMenuItem<String> buildMenuItem(String item) => DropdownMenuItem(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(fontSize: 15, ),
+      ));
 
 
 }

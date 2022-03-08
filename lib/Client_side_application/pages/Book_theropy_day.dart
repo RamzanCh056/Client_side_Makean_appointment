@@ -2,6 +2,7 @@
 import 'package:client_screen/Client_side_application/pages/select_location.dart';
 import 'package:client_screen/Client_side_application/pages/select_services.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 class BookTheropy extends StatefulWidget {
   const BookTheropy({Key? key}) : super(key: key);
 
@@ -10,10 +11,12 @@ class BookTheropy extends StatefulWidget {
 }
 
 class _BookTheropyState extends State<BookTheropy> {
-    String? dropdownValue = ' 60 minutes';
+    String? dropdownValue = ' 30 minutes';
   final items = [
-    ' 60 minutes',
     ' 30 minutes',
+    ' 60 minutes',
+    ' 90 minutes',
+    ' 120 minutes',
   ];
   String? dropdownValueshare = ' 9:00-10:00';
   final item = [
@@ -70,7 +73,15 @@ class _BookTheropyState extends State<BookTheropy> {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text("Book your\ntheropy day", style: TextStyle(color: Colors.black,fontSize: 30),),
+                                  Text(
+  'Choose date & time',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
+  ),
+),
+   
+                
+              ///  Text("Choose date & time", style: TextStyle(color: Colors.black,fontSize: 30),),
 
 
               ],
@@ -78,7 +89,13 @@ class _BookTheropyState extends State<BookTheropy> {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text("please select the day and time\nfor your theropy", style: TextStyle(color: Colors.grey,fontSize: 18),),
+                                                Text(
+  'please select the day and time\nfor your theropy',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.grey, fontSize: 18, fontWeight: FontWeight.bold),
+  ),
+),
+              //  Text("please select the day and time\nfor your theropy", style: TextStyle(color: Colors.grey,fontSize: 18),),
 
 
               ],
@@ -105,7 +122,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                         
@@ -130,7 +147,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                         
@@ -154,7 +171,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                         
@@ -178,7 +195,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                         
@@ -202,7 +219,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                         
@@ -226,7 +243,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                         
@@ -250,7 +267,7 @@ class _BookTheropyState extends State<BookTheropy> {
                       ),
                       child:Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                        child: Column(children: [Text("Today", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                         Text("4" ,style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
                         
                       
@@ -277,7 +294,7 @@ class _BookTheropyState extends State<BookTheropy> {
                  children: [
             
                  
-                  Text("Time internvel", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 14),)
+                  Text("Durations", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 14),)
                ],),
                
                 SizedBox(height: 5,),
@@ -368,14 +385,12 @@ class _BookTheropyState extends State<BookTheropy> {
                     ),
                     borderRadius: BorderRadius.circular(50),
                   ),
-                  child: Text(
-                    "Continue",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,color: Colors.white,
-                    ),
-
-                  ),
+                  child:                                   Text(
+  'Continue',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+  ),
+),
                 ),
               ],
             ),
@@ -394,14 +409,22 @@ class _BookTheropyState extends State<BookTheropy> {
       value: item,
       child: Text(
         item,
-        style: TextStyle(fontSize: 20, color: Colors.black),
+                                          
+ 
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+  ),
+
+        //style: TextStyle(fontSize: 20, color: Colors.black),
       ));
   DropdownMenuItem<String> buildMenuItem1(String item) => DropdownMenuItem(
       value: item,
       child: Text(
         item,
-        style: TextStyle(fontSize: 20, color: Colors.black),
-      ));
+       
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+      )));
 
 }
 

@@ -93,12 +93,13 @@ import 'package:image_picker/image_picker.dart';
                               )
                             ],
                           ),
+                          SizedBox(height: 8,),
                           Row(
                             children: [
                              Text(
                                 'Foot therapist Required' ,
                                 style: TextStyle(
-                                    fontSize: 26, fontWeight: FontWeight.bold, color: Colors.black),
+                                    fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
                               )
                             ],
                           ),

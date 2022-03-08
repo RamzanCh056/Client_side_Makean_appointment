@@ -3,6 +3,7 @@ import 'package:client_screen/Client_side_application/pages/select_services.dart
 import 'package:client_screen/Client_side_application/pages/what_services_youWant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../Search_threapist/threapist_search_screen.dart';
 import 'Book_theropy_day.dart';
@@ -19,7 +20,7 @@ class _Home_pageState extends State<Home_page> {
     return Scaffold(
       backgroundColor: Colors.blue,
      body: Padding(
-       padding: const EdgeInsets.all(10.0),
+       padding: const EdgeInsets.all(12.0),
        child: SingleChildScrollView(
          child: Column(
           children: [
@@ -42,9 +43,21 @@ class _Home_pageState extends State<Home_page> {
                   backgroundColor: Colors.indigo,
                 ),
                 SizedBox(height: 20,),
-                Text("Hello Yasir", style: TextStyle(color: Colors.white,fontSize: 25),),
+                                       Text(
+  'Hello Yasir',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+  ),
+),
+               // Text("Hello Yasir", style: TextStyle(color: Colors.white,fontSize: 25),),
                 SizedBox(height: 15,),
-                Text("Start making an appointnment now", style: TextStyle(color: Colors.white,fontSize: 20),)
+                Text(
+            'Get started with your booking',
+           style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+  ),
+),
+                // Text("Get started with you booking", style: TextStyle(color: Colors.white,fontSize: 20),)
 
               ],
             ),
@@ -64,14 +77,13 @@ class _Home_pageState extends State<Home_page> {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Text(
-                    "Make an appoinment",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,color: Colors.black,
-                    ),
-
-                  ),
+                   child:Text(
+  'Book your massage',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+  ),
+),
+                
                 ),
               ],
             ),
@@ -92,20 +104,33 @@ class _Home_pageState extends State<Home_page> {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Text(
-                    "Repeat previous appoinment",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,color: Colors.white,
-                    ),
+                  child:Text(
+  'Repeat previous appoinment',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+  ),
+),
+                  //  Text(
+                  //   "Repeat previous appoinment",
+                  //   style: TextStyle(
+                  //     fontWeight: FontWeight.w600,
+                  //     fontSize: 18,color: Colors.white,
+                  //   ),
 
-                  ),
+                  // ),
                 ),
                 SizedBox(height: 10,),
                TextButton(onPressed: (){   Navigator.push(context, MaterialPageRoute(builder: 
-               (context)=> SezrchThreapist ()));}, child:  Text("Search Therapist", style: TextStyle(color: Colors.white,fontSize: 18, fontWeight: FontWeight.w600,),
+               (context)=> SezrchThreapist ()));}, child:              Text(
+  'Search by Therapist',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+  ),
+),
                
-               ),
+              //   Text("Search by Therapist", style: TextStyle(color: Colors.white,fontSize: 18, fontWeight: FontWeight.w600,),
+               
+              //  ),
               
                 ),
               

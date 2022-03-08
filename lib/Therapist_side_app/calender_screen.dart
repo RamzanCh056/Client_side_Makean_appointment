@@ -28,7 +28,7 @@ class _calenderscreenState extends State<calenderscreen> {
              Padding(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Find your shedule booking',
+                'Find your sheduled booking',
                 style: TextStyle(color: Colors.grey, fontSize: 14),
 
               ),

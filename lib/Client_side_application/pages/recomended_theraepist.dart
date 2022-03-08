@@ -1,6 +1,7 @@
 
 import 'package:client_screen/Client_side_application/pages/profileview.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 class RecomendedTheropy extends StatefulWidget {
   const RecomendedTheropy({ Key? key }) : super(key: key);
 
@@ -34,7 +35,14 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                        ),
         
                        child: ListTile(
-                          title: Text("Search for therapist to make request", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey),),
+                          title:  Text(
+  'Search for therapist to make request',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.grey, fontSize: 12, fontWeight: FontWeight.bold),
+  ),
+),
+                          
+                        
                           trailing: Icon(Icons.search, size: 25,color: Colors.grey,)
         
                        ),
@@ -49,9 +57,14 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                          mainAxisAlignment: MainAxisAlignment.start,
                          crossAxisAlignment: CrossAxisAlignment.start,
                          children: [
-        
+        Text(
+  'Recommended Therapists',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold),
+  ),
+),
                         
-                    Text(" Recommended Therapists ",style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold,),)
+                  
                        ],),
                      ),
         
@@ -97,7 +110,12 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                            children: [
                         Row(
                           children: [
-                            Text(" Brian Hanner", style: TextStyle(fontSize: 16,),),
+                                Text(
+  'Brian Hanner',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold),
+  ),
+)
                           ],
                         ),
                       Row(children: [
@@ -110,7 +128,13 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
         
                       ],),
                               SizedBox(height: 6,),
-                           Text("14th street London,40120", style: TextStyle(fontSize: 14,color: Colors.grey),),
+                                                              Text(
+  '14th street London,40120',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+),
+                          // Text("14th street London,40120", style: TextStyle(fontSize: 14,color: Colors.grey),),
                         
                         Row(children: [
                           SizedBox(width: 60,),
@@ -129,11 +153,10 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                         borderRadius: BorderRadius.circular(50),
                       ),
                       child: Text(
-                        "Book   ",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18,color: Colors.white,
-                        ),
+                        "Book now",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+  ),
         
                       ),
                     ),
@@ -144,7 +167,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                          Column(
                            children: [
                              MaterialButton(
-                      color: Colors.redAccent[200],
+                      color: Colors.orange,
                       minWidth: 30,
                      
                       height: 35,
@@ -153,7 +176,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                          color: Colors.redAccent,
+                          color: Colors.orange,
                         ),
                         borderRadius: BorderRadius.circular(50),
                       ),
@@ -268,7 +291,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                          Column(
                            children: [
                              MaterialButton(
-                      color: Colors.redAccent[200],
+                      color: Colors.orange,
                       minWidth: 30,
                      
                       height: 35,
@@ -277,7 +300,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                          color: Colors.redAccent,
+                            color: Colors.orange,
                         ),
                         borderRadius: BorderRadius.circular(50),
                       ),
@@ -391,7 +414,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                          Column(
                            children: [
                              MaterialButton(
-                      color: Colors.redAccent[200],
+                      color: Colors.orange,
                       minWidth: 30,
                      
                       height: 35,
@@ -400,7 +423,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                          color: Colors.redAccent,
+                          color: Colors.orange,
                         ),
                         borderRadius: BorderRadius.circular(50),
                       ),
@@ -514,7 +537,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                          Column(
                            children: [
                              MaterialButton(
-                      color: Colors.redAccent[200],
+                        color: Colors.orange,
                       minWidth: 30,
                      
                       height: 35,
@@ -523,7 +546,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                          color: Colors.redAccent,
+                           color: Colors.orange,
                         ),
                         borderRadius: BorderRadius.circular(50),
                       ),
@@ -637,7 +660,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                        Column(
                          children: [
                            MaterialButton(
-                    color: Colors.redAccent[200],
+                     color: Colors.orange,
                     minWidth: 30,
                    
                     height: 35,
@@ -646,7 +669,7 @@ class _RecomendedTheropyState extends State<RecomendedTheropy> {
                     },
                     shape: RoundedRectangleBorder(
                       side: BorderSide(
-                        color: Colors.redAccent,
+                         color: Colors.orange,
                       ),
                       borderRadius: BorderRadius.circular(50),
                     ),

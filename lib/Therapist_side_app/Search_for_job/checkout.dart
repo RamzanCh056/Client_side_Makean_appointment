@@ -247,7 +247,7 @@ class _checkouttherapistState extends State<checkouttherapist> {
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Text(
-                    "Checkout",
+                    "Proceed to payment",
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 18,color: Colors.white,

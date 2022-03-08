@@ -41,7 +41,7 @@ class _jobsearchState extends State<jobsearch> {
                 SizedBox(height: 20,),
                 Text("Hello Linda", style: TextStyle(color: Colors.white,fontSize: 25),),
                 SizedBox(height: 15,),
-                Text("Start getting an appointnment now", style: TextStyle(color: Colors.white,fontSize: 20),)
+                Text("Start getting an appointnment now", style: TextStyle(color: Colors.white,fontSize: 16),)
 
               ],
             ),

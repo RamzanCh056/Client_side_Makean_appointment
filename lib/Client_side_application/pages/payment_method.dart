@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'chechout.dart';
 class PaymentMethod extends StatefulWidget {
@@ -64,17 +65,38 @@ class _PaymentMethodState extends State<PaymentMethod> {
                    mainAxisAlignment: MainAxisAlignment.start,
                    crossAxisAlignment: CrossAxisAlignment.start,
                    children: [
-                 Text("Select Payment\nmethod", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
+                      Text(
+                        "Select Payment\nmethod",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+              //   Text("Select Payment\nmethod", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
             
 
                  ],),
                  SizedBox(height: 8,),
               Row(children: [
-                Text("Select payment Method to proceed the\nbooking", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),)
+                    Text(
+                        "Select payment Method to proceed the\nbooking",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+               // Text("Select payment Method to proceed the\nbooking", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),)
               ],),
               SizedBox(height: 18,),
   Column(children: [
-                Text("Select payment Method of payment to therapist", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),)
+     Text(
+                        "Select payment Method of payment to therapist",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                //Text("Select payment Method of payment to therapist", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),)
               ],),
                 Padding(
                   padding: const EdgeInsets.all(8.0),

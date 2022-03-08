@@ -1,6 +1,7 @@
 
 import 'package:client_screen/Client_side_application/pages/payment_method.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfileView extends StatefulWidget {
   ProfileView({Key? key}) : super(key: key);
@@ -88,11 +89,14 @@ class _ProfileViewState extends State<ProfileView> {
                              TextButton(onPressed: (){
 
                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>  PaymentMethod ()));
-                             }, child:  Text(
-                                'Brian Hanner' ,
-                                style: TextStyle(
-                                    fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
-                              ),),
+                             }, child: Text(
+                        "Brian haner",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 26, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                              ),
                             ],
                           ),
                           Row(
@@ -121,7 +125,14 @@ class _ProfileViewState extends State<ProfileView> {
                           ),
                           Row(
                             children: [
-                              Text('Can not provide invoice for his services.')
+                              Text(
+                        "Can not provide invoice for his services.",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                             // Text('Can not provide invoice for his services.')
                             ],
                           ),
                           SizedBox(
@@ -162,7 +173,14 @@ class _ProfileViewState extends State<ProfileView> {
                                           ),
                                           Row(
                                             children: [
-                                              Text('Services rate list'),
+                                               Text(
+                        "Services rate list",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                                            //  Text('Services rate list'),
                                             ],
                                           ),
                                           SizedBox(
@@ -170,7 +188,14 @@ class _ProfileViewState extends State<ProfileView> {
                                           ),
                                           Row(
                                             children: [
-                                              Text('Foot Therapy      12\$'),
+                                                    Text(
+                        "Foot Therapy      12\$",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                                             // Text('Foot Therapy      12\$'),
                                             ],
                                           ),
                                         ],
@@ -223,7 +248,14 @@ class _ProfileViewState extends State<ProfileView> {
                                               mainAxisAlignment:
                                                   MainAxisAlignment.start,
                                               children: [
-                                                Text('Availibilty'),
+                                                        Text(
+                        "Availibilty",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                                              //  Text('Availibilty'),
                                               ],
                                             ),
                                             SizedBox(
@@ -231,7 +263,14 @@ class _ProfileViewState extends State<ProfileView> {
                                             ),
                                             Row(
                                               children: [
-                                                Text('Mon   08:00 AM -05:00 PM'),
+                                                Text(
+                        "Mon   08:00 AM -05:00 PM",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                                                //Text('Mon   08:00 AM -05:00 PM'),
                                               ],
                                             ),
                                           ],
@@ -284,7 +323,14 @@ class _ProfileViewState extends State<ProfileView> {
                                               mainAxisAlignment:
                                                   MainAxisAlignment.start,
                                               children: [
-                                                Text('Location'),
+                                                                          Text(
+                        "Location",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                                               // Text('Location'),
                                               ],
                                             ),
                                             SizedBox(
@@ -292,8 +338,14 @@ class _ProfileViewState extends State<ProfileView> {
                                             ),
                                             Row(
                                               children: [
-                                                Text(
-                                                    '14th   Street London,40120'),
+                                                                          Text(
+                        "14th   Street London,40120'",
+                       style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+  ),
+        
+                      ),
+                                              
                                               ],
                                             ),
                                           ],

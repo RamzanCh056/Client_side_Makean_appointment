@@ -12,6 +12,18 @@ class bottomprofile extends StatefulWidget {
 class _bottomprofileState extends State<bottomprofile> {
    PickedFile? _imagefile;
   final ImagePicker _picker  = ImagePicker();
+   String? dropdownValue = '  Male ';
+  final items = [
+    '  Male ',
+    '  Female ',
+    '  Other ',
+  ];
+     String? dropdownValueone = '  \$ ';
+  final itemsone = [
+    '  \$ ',
+    '   \$ ',
+    
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -265,8 +277,8 @@ SizedBox(height: 5,),
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                         
                         children: [
-                         Text("State", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
-                           Text("City", style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
+                         Text("Degrees & Seminars                 ", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                           Text("City               ", style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
 
                       ],),
                         new Row(
@@ -283,7 +295,7 @@ SizedBox(height: 5,),
                          borderRadius: BorderRadius.circular(16),
                  
                        ),
-                       hintText: 'Adlen',
+                       hintText: 'Doc ex',
                       
                      
                        
@@ -402,33 +414,112 @@ SizedBox(height: 5,),
                      ),
           
         ],),
+         SizedBox(height: 5,),
+        Column( 
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+              Text("  Work experience", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                 SizedBox(height: 3,),
+             new   TextField(
+
+                     decoration: new InputDecoration(
+                        
+                       border: new OutlineInputBorder(
+                         
+                         borderSide: new BorderSide(
+                           color: Colors.black, width: 3),
+                         borderRadius: BorderRadius.circular(16),
+                 
+                       ),
+                       hintText: 'Two years etc',
+                      
+                     
+                       
+                     ),
+                     ),
+          
+        ],),
         SizedBox(height: 5,),
          Column( 
           mainAxisAlignment: MainAxisAlignment.center,
         //  crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-              Text("  Gender", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+              Row(
+                children: [
+                  Text("  Gender", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                ],
+              ),
                  SizedBox(height: 3,),
-             Padding(
-               padding: const EdgeInsets.only(left: 70,right: 70),
-               child: new   TextField(
+            Column(children: [
+               Container(
+                 height: 60,
+                 width: double.infinity,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
+                 color: Colors.white,
+                   boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0.0, 1.0), //(x,y)
+                      blurRadius: 2.0,
+                    ),
+                  ],
 
-                       decoration: new InputDecoration(
-                          
-                         border: new OutlineInputBorder(
-                           
-                           borderSide: new BorderSide(
-                             color: Colors.black, width: 3),
-                           borderRadius: BorderRadius.circular(16),
-                   
-                         ),
-                         hintText: 'Female',
-                        
-                       
-                         
-                       ),
-                       ),
-             ),
+                 ),
+                 child:    DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: dropdownValue,
+                    items: items.map(buildMenuItem).toList(),
+                    dropdownColor: Colors.white,
+                    onChanged: (value) =>
+                        setState(() => this.dropdownValue = value),
+                  ),
+                ),
+
+               ),
+
+               ],),
+          
+        ],),
+  SizedBox(height: 5,),
+         Column( 
+          mainAxisAlignment: MainAxisAlignment.start,
+        //  crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+              Row(
+                children: [
+                  Text("  Per hour rate", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                ],
+              ),
+                 SizedBox(height: 3,),
+            Column(children: [
+               Container(
+                 height: 60,
+                 width: double.infinity,
+                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
+                 color: Colors.white,
+                   boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0.0, 1.0), //(x,y)
+                      blurRadius: 2.0,
+                    ),
+                  ],
+
+                 ),
+                 child:    DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: dropdownValueone,
+                    items: itemsone.map(buildMenuItem).toList(),
+                    dropdownColor: Colors.white,
+                    onChanged: (value) =>
+                        setState(() => this.dropdownValueone = value),
+                  ),
+                ),
+
+               ),
+
+               ],),
           
         ],),
 
@@ -498,6 +589,20 @@ SizedBox(height: 60,),
   );
 
  }
+ DropdownMenuItem<String> buildMenuItem(String item) => DropdownMenuItem(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(fontSize: 15, ),
+      ));
+       DropdownMenuItem<String> buildMenuItemone(String item) => DropdownMenuItem(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(fontSize: 15, ),
+      ));
+      
+
 
 
 }

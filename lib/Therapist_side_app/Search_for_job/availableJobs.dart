@@ -73,7 +73,7 @@ class _availabeljobState extends State<availabeljob> {
                            children: [
         
                           
-                      Text("Aplly for the job posted by the SPA's",style: TextStyle(fontSize: 14,color: Colors.grey ,fontWeight: FontWeight.bold,),)
+                      Text("Aplly for the job posted by the SPA's Centers",style: TextStyle(fontSize: 14,color: Colors.grey ,fontWeight: FontWeight.bold,),)
                          ],),
 
                       SizedBox(height: 8,),
@@ -248,7 +248,7 @@ class _availabeljobState extends State<availabeljob> {
                         "Featured",
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 10,color: Colors.white,
+                            fontSize: 8,color: Colors.white,
                         ),
         
                       ),

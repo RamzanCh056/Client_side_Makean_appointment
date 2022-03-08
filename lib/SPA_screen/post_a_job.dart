@@ -91,7 +91,7 @@ class _postjobState extends State<postjob> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text("Job posting for Therapist ", style: TextStyle(color: Colors.black,fontSize: 30),),
+                  Text("Job posting for Therapist ", style: TextStyle(color: Colors.black,fontSize: 25),),
         
         
                 ],

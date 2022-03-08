@@ -62,7 +62,7 @@ class _SpaNotificationState extends State<SpaNotification> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: Text(
-                              'Notification',
+                              'Notifications',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 18,

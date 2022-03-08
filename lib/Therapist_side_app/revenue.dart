@@ -53,7 +53,7 @@ class _revenueState extends State<revenue> {
                          child: Center(
                              child: Row(children: [
                                SizedBox(height: 12,),
-                      Center(child: Text("    Month", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black))),
+                      Center(child: Text("  Month", style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black))),
                        SizedBox(width: 10,),
                       Icon(Icons.keyboard_arrow_down),
                 

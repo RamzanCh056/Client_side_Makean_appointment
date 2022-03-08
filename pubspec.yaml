@@ -43,6 +43,7 @@ dependencies:
   multi_select_flutter: ^4.0.0
   flutter_barcode_scanner: ^2.0.0
   qr_code_scanner: ^0.7.0
+  google_fonts: ^2.3.0
   
  
 dev_dependencies:
@@ -85,6 +86,35 @@ flutter:
      - images/manapp.jpg
      - images/apllication.jpg
      - images/manappli.png
+     - images/swedish.png
+     - images/medium.png
+     - images/deeptissue.png
+     - images/sport.png
+     - images/chupee.png
+     - images/holistic.png
+     - images/candle.png
+     - images/stone.png
+     - images/face.png
+     - images/body.png
+     - images/thai.png
+     - images/reflex.png
+     - images/celulite.png
+     - images/shaistu.png
+     - images/triger.png
+     - images/aermo.png
+     - images/rejua.png
+     - images/alyrvaida.png
+     - images/bampomsg.png
+     - images/medro.png
+     - images/pragnent.png
+     - images/baby.png
+     - images/raiki.png
+     - images/face.png
+     - images/bodys.png
+     - images/bodycare.png
+     - images/hydration.png
+
+   
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -98,17 +128,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+  fonts:
+    - family: Comfortaa
+      fonts:
+        - asset: assets/Comfortaa-Light.ttf
+        # - asset: fonts/Schyler-Italic.ttf
+          style: italic
+    # - family: Trajan Pro
+      # fonts:
+      #   - asset: fonts/TrajanPro.ttf
+      #   - asset: fonts/TrajanPro_Bold.ttf
+          # weight: 700
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

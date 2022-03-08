@@ -62,7 +62,7 @@ class _Notuficatoin_pageState extends State<Notuficatoin_page> {
                           Padding(
                             padding: const EdgeInsets.only(left: 30),
                             child: Text(
-                              'Notification',
+                              'Notifications',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 18,

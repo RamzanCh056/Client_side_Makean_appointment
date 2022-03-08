@@ -1,6 +1,7 @@
 
 import 'package:client_screen/Client_side_application/pages/recomended_theraepist.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'Book_theropy_day.dart';
 class SelectLocation extends StatefulWidget {
@@ -68,7 +69,12 @@ class _SelectLocationState extends State<SelectLocation> {
                    ),
 
                    child: ListTile(
-                      title: Text("Select Location", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                      title:                                   Text(
+  'Select location',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+  ),
+),
                       trailing: Icon(Icons.search, size: 25,color: Colors.black,)
 
                    ),
@@ -82,7 +88,7 @@ class _SelectLocationState extends State<SelectLocation> {
                 
                     Column(children: [
                    Container(
-                     height: 200,
+                     height: 230,
                      width: double.infinity,
                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(14),
                      color: Colors.white,
@@ -102,12 +108,35 @@ class _SelectLocationState extends State<SelectLocation> {
                        // mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                        Text("Foot Therapy" , style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+                                                            Text(
+  'Foot Therapy',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+),
+                     
                         SizedBox(height: 20,),
-                          Text("60 minutes" , style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
-                        Text("Tueday 08 oct, 2021\n9:00-10:00" , style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+                                                                                    Text(
+  '60 minutes',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+),
+                        
+                                Text(
+  'Tueday 08 oct, 2021\n9:00-10:00',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+),
                          SizedBox(height: 20,),
-                          Text("Bank side Road, 41234,London, uk" , style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey),),
+                                                         Text(
+  'Bank side Road, 41234,London, uk',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
+  ),
+),
+                       //   Text("Bank side Road, 41234,London, uk" , style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey),),
 
                           SizedBox(height: 10,),
 
@@ -128,14 +157,12 @@ class _SelectLocationState extends State<SelectLocation> {
                     ),
                     borderRadius: BorderRadius.circular(50),
                   ),
-                  child: Text(
-                    "Get Therapist",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,color: Colors.white,
-                    ),
-
-                  ),
+                  child:                                                          Text(
+  'Get Therapist',
+  style: GoogleFonts.comfortaa(
+    textStyle: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+  ),
+),
                 ),
               ],
             ),

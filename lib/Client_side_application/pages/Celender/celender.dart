@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
              Padding(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Find your shedule booking',
+                'Find your sheduled booking',
                 style: TextStyle(color: Colors.grey, fontSize: 14),
 
               ),

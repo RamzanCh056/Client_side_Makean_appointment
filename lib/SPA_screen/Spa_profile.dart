@@ -121,8 +121,8 @@ class _SpaProfileState extends State<SpaProfile> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         
                         children: [
-                         Text("First Name", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
-                           Text("Last Name", style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
+                         Text("Center Name", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                           Text("Owner Name", style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
 
                       ],),
                         new Row(
@@ -139,7 +139,7 @@ class _SpaProfileState extends State<SpaProfile> {
                          borderRadius: BorderRadius.circular(16),
                  
                        ),
-                       hintText: 'Linda',
+                       hintText: 'Spa center',
                       
                      
                        
@@ -257,36 +257,23 @@ class _SpaProfileState extends State<SpaProfile> {
 
 SizedBox(height: 5,),
 
-  Row(
+  Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                         
                         children: [
-                         Text("State", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
-                           Text("City", style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
+                        // Text("State", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+                           Row(
+                             children: [
+                               Text("  City", style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
+                             ],
+                           ),
 
                       ],),
+                      SizedBox(height: 5,),
                         new Row(
         children: <Widget>[
-          new Flexible(
-            child: new   TextField(
-
-                     decoration: new InputDecoration(
-                        
-                       border: new OutlineInputBorder(
-                         
-                         borderSide: new BorderSide(
-                           color: Colors.black, width: 3),
-                         borderRadius: BorderRadius.circular(16),
-                 
-                       ),
-                       hintText: 'Adlen',
-                      
-                     
-                       
-                     ),
-                     ),
-          ),
-          SizedBox(width: 20,),
+         
+       
             new Flexible(
             child: new   TextField(
 
@@ -377,7 +364,7 @@ SizedBox(height: 5,),
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              Text("  Phone number", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+              Text("  Vat number", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
                  SizedBox(height: 3,),
              new   TextField(
 
@@ -390,7 +377,7 @@ SizedBox(height: 5,),
                          borderRadius: BorderRadius.circular(16),
                  
                        ),
-                       hintText: '+92339 3299910',
+                       hintText: '92339 329',
                       
                      
                        
@@ -398,35 +385,35 @@ SizedBox(height: 5,),
                      ),
           
         ],),
-        SizedBox(height: 5,),
-         Column( 
-          mainAxisAlignment: MainAxisAlignment.center,
-        //  crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-              Text("  Gender", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
-                 SizedBox(height: 3,),
-             Padding(
-               padding: const EdgeInsets.only(left: 70,right: 70),
-               child: new   TextField(
+        // SizedBox(height: 5,),
+        //  Column( 
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        // //  crossAxisAlignment: CrossAxisAlignment.center,
+        //   children: [
+        //       Text("  Gender", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),),
+        //          SizedBox(height: 3,),
+        //      Padding(
+        //        padding: const EdgeInsets.only(left: 70,right: 70),
+        //        child: new   TextField(
 
-                       decoration: new InputDecoration(
+        //                decoration: new InputDecoration(
                           
-                         border: new OutlineInputBorder(
+        //                  border: new OutlineInputBorder(
                            
-                           borderSide: new BorderSide(
-                             color: Colors.black, width: 3),
-                           borderRadius: BorderRadius.circular(16),
+        //                    borderSide: new BorderSide(
+        //                      color: Colors.black, width: 3),
+        //                    borderRadius: BorderRadius.circular(16),
                    
-                         ),
-                         hintText: 'Male',
+        //                  ),
+        //                  hintText: 'Male',
                         
                        
                          
-                       ),
-                       ),
-             ),
+        //                ),
+        //                ),
+        //      ),
           
-        ],),
+        // ],),
 
 
 
